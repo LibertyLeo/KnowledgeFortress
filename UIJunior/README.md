@@ -2,7 +2,7 @@ UI初级整理
 ===
 > 整理的相关方法基于Xcode7.2.1版本中的文档。
 
-<!-- MarkdownTOC -->
+<!-- /MarkdownTOC -->
 
 - [01 iPhone 开发入门](#01-iphone-开发入门)
 	- [一. 项目文件释义](#一-项目文件释义)
@@ -316,7 +316,7 @@ userInteractionEnabled | 是否响应触摸事件
 
 ## 03 常用UI控件
 
-![UIWidget](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/UIWidget.png)
+![UIWidget](/UIJunior/Image/UIWidget.png)
 
 #### 一. UILabel文本标签
 > UILabel主要用来显示简短的文本。
@@ -334,7 +334,7 @@ numberOfLines | 文本行数
 >> 控件主要响应3种事件：基于触摸的事件、基于值的事件、基于编辑的事件。  
 >> 常用事件：UIControlEventTouchUpInside 按钮的点击事件、UIControlEventValueChanged 进度条拖动。
 
-![UIControl](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/UIControl.png)
+![UIControl](/UIJunior/Image/UIControl.png)
 
 #### 三. UIButton按钮
 1. 常用方法
@@ -365,7 +365,7 @@ UIControlStateReserved | 系统保留状态
 
 3. UIButton类型
 
-![UIButton](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/UIButton.png)
+![UIButton](/UIJunior/Image/UIButton.png)
 
 #### 四. UITextField文本输入
 > 文本输入框，用于输入少量文字。
@@ -562,7 +562,7 @@ currentPage | 当前页数
 	- iOS内置多种视图控制器类，如导航控制器UINavigationController、标签栏控制器UITabBarController、表视图控制器UITableViewController等
 	- 每个视图控制器管理和控制一系列的视图，但是你永远不会直接把UIView添加到UIWindow上，而是添加UIViewController
 
-![UIViewController](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/UIViewController.png)
+![UIViewController](/UIJunior/Image/UIViewController.png)
 
 #### 二. UIViewController的创建
 
@@ -592,9 +592,9 @@ self.view.backgroundColor = [UIColor redColor];
 > 2. 如果存在view，则直接加载。相反，如果不存在，则UIViewController调用loadView方法。
 > 3. loadView方法执行如下操作：如果你重载了该方法，则必须创建view给UIViewController的view的属性。
 
-![UIView](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/UIView.png)
+![UIView](/UIJunior/Image/UIView.png)
 
-![UIVIew2](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/UIView2.png)
+![UIVIew2](/UIJunior/Image/UIView2.png)
 
 #### 四. 设置模拟器支持方向旋转
 1. 直接设置
@@ -666,11 +666,11 @@ mc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal'
 
 3. 视图出现
 
-![ShowModalView](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/ShowModalView.png)
+![ShowModalView](/UIJunior/Image/ShowModalView.png)
 
 4. 视图消失
 
-![DismissModalView](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/DismissModalView.png)
+![DismissModalView](/UIJunior/Image/DismissModalView.png)
 
 5. 理解调用顺序
 
@@ -751,7 +751,7 @@ SecondViewController *secondVC = [[SecondViewController alloc]init];
 1.  - 一个导航控制器包含一个导航栏(UINavigationBar)
 	- 一个子控制器对应一个导航项(UINavigationItem)
 
-![UINavigation](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/UINavigation.png)
+![UINavigation](/UIJunior/Image/UINavigation.png)
 
 2. 设置导航栏标题
 
@@ -803,7 +803,7 @@ self.navigationItem.titleView = titleLabel;
 	self.navigationItem.prompt = nil;
 ```
 
-![UINavigationBar](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/UINavigationBar.png)
+![UINavigationBar](/UIJunior/Image/UINavigationBar.png)
 
 5. 代理方法
 
@@ -857,14 +857,14 @@ self.navigationItem.titleView = titleLabel;
 
 #### 四. UITabBar视图的组成
 
-![UITabBar](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/UITabBar.png)
+![UITabBar](/UIJunior/Image/UITabBar.png)
 
 #### 五. 定制UITabbar
 - 项目中最常用的结构图
 
-![CustomTabBar](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/CustomTabBar.png)
+![CustomTabBar](/UIJunior/Image/CustomTabBar.png)
 
-![CustomTabBarController](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/CustomTabBarController.png)
+![CustomTabBarController](/UIJunior/Image/CustomTabBarController.png)
 
 1. 采用系统自带的tabBar类型
 
@@ -929,7 +929,7 @@ self.navigationItem.titleView = titleLabel;
 1. 最常见的表视图例子如通讯录，设置等等。
 2. 表视图的风格分两种:UITableViewStylePlain(平铺)，UITableViewStyleGrouped(分组)。
 
-![UITableView](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/UITableView.png)
+![UITableView](/UIJunior/Image/UITableView.png)
 
 3. 表视图的索引路径(NSIndexPath)
 
@@ -980,7 +980,7 @@ Row | 在组中的行索引
 >> 3. 开始调用数据源方法(事件循环没有结束)
 >> 4. 调用顺序如图示
 
-![UITableViewDelegateAndDataSource](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/UITableViewDelegateAndDataSource.png)
+![UITableViewDelegateAndDataSource](/UIJunior/Image/UITableViewDelegateAndDataSource.png)
 
 #### 四. 表视图的构成
 1. 主要由头视图、单元格、尾视图三部分组成。
@@ -1265,7 +1265,7 @@ Row | 在组中的行索引
 
 4. 表视图的编辑模式流程图
 
-![UITableViewController](https://github.com/LibertyLeo/Blog-Articles/raw/master/UI_Junior/Image/UITableViewController.png)
+![UITableViewController](/UIJunior/Image/UITableViewController.png)
 
 #### 五. 多选模式
 - 在iOS5.0后，表视图增加多选功能
